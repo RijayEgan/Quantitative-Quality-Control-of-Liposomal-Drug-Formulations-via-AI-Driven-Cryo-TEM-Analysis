@@ -1,0 +1,12 @@
+torch
+torchvision
+onnx
+onnxruntime
+opencv-python
+flask
+gunicorn
+pyyaml
+tqdm
+numpy
+Pillow
+scikit-image
