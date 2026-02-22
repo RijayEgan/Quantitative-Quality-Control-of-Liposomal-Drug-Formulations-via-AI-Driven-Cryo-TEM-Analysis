@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Liposome annotation file",
+  "type": "object",
+  "required": ["image_id", "width", "height", "num_annotations", "annotations"],
+  "additionalProperties": false,
+  "properties": {
+    "image_id": { "type": "string", "minLength": 1 },
+    "width": { "type": "integer", "minimum": 1 },
+    "height": { "type": "integer", "minimum": 1 },
+    "num_annotations": { "type": "integer", "minimum": 0 },
+    "annotations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "label", "center_x", "center_y", "radius_x", "radius_y"],
+        "additionalProperties": true,
+        "properties": {
+          "id": { "type": "integer", "minimum": 0 },
+          "type": { "type": "string", "enum": ["circle", "ellipse", "rect"] },
+          "label": { "type": "string", "minLength": 1 },
+          "center_x": { "type": "number" },
+          "center_y": { "type": "number" },
+          "radius_x": { "type": "number", "exclusiveMinimum": 0 },
+          "radius_y": { "type": "number", "exclusiveMinimum": 0 },
+          "mean_intensity": { "type": ["number", "null"] }
+        }
+      }
+    }
+  }
+}
