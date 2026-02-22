@@ -1,0 +1,18 @@
+{
+  "image_id": "SIMCEPImages_A01_C1_F1_s02_w1.TIF",
+  "width": 696,
+  "height": 520,
+  "num_annotations": 1,
+  "annotations": [
+    {
+      "id": 0,
+      "type": "circle",
+      "label": "Loaded",
+      "center_x": 249.7552809045647,
+      "center_y": 426.7552809045647,
+      "radius_x": 17.755280904564703,
+      "radius_y": 17.755280904564703,
+      "mean_intensity": 95.2771573604061
+    }
+  ]
+}
