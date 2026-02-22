@@ -1,0 +1,10 @@
+torch>=1.12.0
+torchvision>=0.13.0
+# Install detectron2 matching your torch/cuda; adjust or install via official wheel
+detectron2==0.6
+opencv-python
+Pillow
+pyyaml
+tqdm
+numpy
+scikit-image
